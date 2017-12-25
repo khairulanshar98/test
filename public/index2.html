@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        .fontred {
+            color: red;
+        }
+    </style>
+    <script>
+        console.log("di dalam head");
+        var abc = "just text";
+        //debugger
+        var item1 = document.getElementById("item1");
+        console.log("item1: ", item1);
+        item1.innerHTML = "Ganti Title";
+    </script>
+    <button>test</button>
+</head>
+
+<body>
+    <header>Test Header</header>
+    <header>test header 2</header>
+
+
+    <div class=row>
+        <div class=col-md-6>md-6</div>
+        <div class=col-md-6>md-6</div>
+    </div>
+
+
+
+
+    <h1 class="fontblue fontbold fontsize32">Hellow World</h1>
+    <h1 class="fontred">Hellow World 2</h1>
+    <h1 style="color:green;font-size:32px;">Hellow World 2</h1>
+
+    <button>test</button>
+    <span> </span>
+    <span> </span>
+    <div>
+        <a class="btn btn-default" href="#" role="button">Link</a>
+        <button id="item1" class="btn btn-default" type="submit">Button item1</button>
+        <input class="btn btn-default" type="button" value="Input">
+        <input class="btn btn-default" type="submit" value="Submit">
+    </div>
+    <div>
+        <!-- Standard button -->
+        <button type="button" class="btn btn-default">Default</button>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <br>
+
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-success">Success</button>
+
+        <!-- Contextual button for informational alert messages -->
+        <button type="button" class="btn btn-info">Info</button>
+
+        <!-- Indicates caution should be taken with this action -->
+        <button type="button" class="btn btn-warning">Warning</button>
+
+        <!-- Indicates a dangerous or potentially negative action -->
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        console.log("di dalam body");
+        var item1_body = document.getElementById("item1");
+        console.log("item1_body: ", item1_body);
+        //item1_body.style.backgroundColor = "black";
+        item1_body.innerHTML = "Ganti Title";
+        var item_jquery = $("#item1")
+        console.log("item_jquery: ", item_jquery);
+        item_jquery.html("Ganti Title Jquery");
+    </script>
+
+</body>
+
+</html>

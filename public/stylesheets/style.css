@@ -1,0 +1,16 @@
+.fontblue{
+    color: blue;
+}
+
+.fontbold{
+font-weight: bold;
+}
+
+.fontsize32{
+    font-size: 32px;
+}
+
+
+.modal{
+    background-color: rgba(0,0,0,0.7);
+}
